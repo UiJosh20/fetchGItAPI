@@ -1,23 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./fetch.css";
 const Fetch = () => {
   const url = "https://jsonplaceholder.typicode.com/users";
   const endPoint = "https://api.github.com/users";
-  const [data, setData] = useState([]);
   const [gitIt, setGit] = useState([]);
 
-  const fetchUp = () => {
-    axios
-      .get(url)
-      .then((response) => {
-        console.log(response.data);
-        setData(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
 
   const getGIt = () => {
     axios.get(endPoint).then((response) => {
@@ -26,18 +14,15 @@ const Fetch = () => {
     });
   };
 
+  useEffect(() => {
+    console.log("useEffect");
+    getGIt()
+  }, [])
+  
+
   return (
     <>
-    <div className="p-3 bg-black text-white">
-      <button className="button" data-text="Awesome" onClick={getGIt}>
-        <span className="actual-text">&nbsp;Users&nbsp;</span>
-        <span aria-hidden="true" className="hover-text">
-          &nbsp;Users&nbsp;
-        </span>
-      </button>
-
-
- 
+    <div className="p-3 bg-black text-white w100">
 
     <div className=" displayFlex gap-7 p-3 ease-in delay-150">
 

@@ -1,0 +1,13 @@
+.mainIt{
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 30px  50px;
+}
+.linkIt{
+  display: flex;
+  gap: 30px;
+  
+}

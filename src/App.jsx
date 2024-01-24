@@ -1,13 +1,20 @@
 import { useState } from 'react'
+import Nav from './Components/Nav'
+import Fetch from './Components/Fetch'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Fetch from './Components/fetch'
+import Home from './Components/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Fetch/>
+    <Nav/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/fetch' element={<Fetch/>}></Route>
+    </Routes>
+      
     </>
   )
 }
