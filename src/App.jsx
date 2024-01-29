@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/fetch/details/:id" element={<ContactDetails />}></Route>
           <Route path="/fetch" element={<Fetch />} />
         </Route>
