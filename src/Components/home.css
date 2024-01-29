@@ -75,3 +75,12 @@
     filter: drop-shadow(0 0 23px var(--animation-color));
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hover-text{
+    font-size: 50px;
+  }
+  .actual-text{
+    font-size: 50px;
+  }
+}

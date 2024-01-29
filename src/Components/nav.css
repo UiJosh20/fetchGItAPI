@@ -3,11 +3,24 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  color: white;
-  padding: 30px  50px;
+  align-items: center;
+  color: rgb(74, 240, 198);
+  padding: 30px  30px;
+  font-weight: bold;
 }
 .linkIt{
   display: flex;
   gap: 30px;
   
+}
+
+h1{
+  color:white ;
+}
+@media screen and (max-width: 475px) {
+  h1{
+    color:white ;
+    font-size: 20px !important;
+    font-weight: bold;
+  }
 }

@@ -17,9 +17,6 @@ const Nav = () => {
         <Link to="/fetch">
         Contact
         </Link>
-        <Link to="/fetch/details/:id">
-        Details
-        </Link>
       </div>
     </main>
   )
