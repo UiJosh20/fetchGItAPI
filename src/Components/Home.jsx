@@ -11,7 +11,9 @@ const Home = () => {
           &nbsp;FIRETEXT&nbsp;
         </span>
       </button> 
+      {/* <p>Welcome to the realm of contacts</p> */}
       </div>
+      
 
     </main>
   )

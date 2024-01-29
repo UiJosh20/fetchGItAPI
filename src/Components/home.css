@@ -5,14 +5,14 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  
+  animation: animateButton 3s infinite alternate;
 }
 
 /* button styling */
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #ff3737;
+  --animation-color: #37ffee;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -36,6 +36,7 @@
   overflow: hidden;
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
+  animation: autoHover 5s infinite;
 }
 .actual-text{
   font-size: 100px;
@@ -52,4 +53,25 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
+}
+
+@keyframes animateButton {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes autoHover {
+  0%, 100% {
+    width: 0%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+    color: rgb(1, 129, 97);
+  }
+  50% {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+  }
 }

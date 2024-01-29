@@ -11,11 +11,14 @@ const Nav = () => {
       </div>
     
       <div className="linkIt">
-      <Link to="/">
+      <Link to="/home">
         Home
         </Link>
         <Link to="/fetch">
         Contact
+        </Link>
+        <Link to="/fetch/details/:id">
+        Details
         </Link>
       </div>
     </main>
